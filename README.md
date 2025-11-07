@@ -163,3 +163,60 @@ Si vous n’avez pas accès à `apache.conf` chez LWS, vous pouvez déployer via
   }
   ```
 - Frontend: utilisez `withCredentials`/`credentials: 'include'` pour les cookies Sanctum.
+
+### Exemple concret — dev.2adt-consulting.com (arborescence LWS `htdocs`)
+
+Arborescence LWS fournie: `htdocs/dev.2adt-consulting.com/` est la racine web du sous‑domaine.
+
+1) Déployer le SPA (frontend)
+- Copiez le contenu de `soussou-game/dist` dans `htdocs/dev.2adt-consulting.com/`.
+- Ajoutez le fallback React en mode history:
+  ```htaccess
+  # htdocs/dev.2adt-consulting.com/.htaccess
+  RewriteEngine On
+  RewriteCond %{REQUEST_URI} !^/api/
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+  RewriteRule ^ index.html [L]
+  ```
+
+2) Exposer l’API Laravel sous `/api` (sans vhost)
+- Uploadez le backend dans `htdocs/dev.2adt-consulting.com/soussou-api/` (avec `vendor/` installé ou via Composer chez LWS).
+- Créez le pont vers `public/index.php`:
+  ```php
+  // htdocs/dev.2adt-consulting.com/api/index.php
+  <?php require __DIR__ . '/../soussou-api/public/index.php'; ?>
+  ```
+- Réécriture pour les routes API:
+  ```htaccess
+  # htdocs/dev.2adt-consulting.com/api/.htaccess
+  RewriteEngine On
+  RewriteBase /api
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^ index.php [L]
+  ```
+
+3) Configuration frontend — base URL de l’API
+- Utilisez `https://dev.2adt-consulting.com/api`.
+- Pensez à `credentials: 'include'` (fetch) ou `axios.defaults.withCredentials = true`.
+
+4) Configuration `.env` Laravel pour ce domaine
+```env
+APP_ENV=production
+APP_URL=https://dev.2adt-consulting.com
+SESSION_DRIVER=file
+SESSION_DOMAIN=.2adt-consulting.com
+SESSION_SECURE_COOKIE=true
+SESSION_SAME_SITE=lax
+SANCTUM_STATEFUL_DOMAINS=dev.2adt-consulting.com,www.2adt-consulting.com
+```
+- CORS (`config/cors.php`):
+  - `allowed_origins=['https://dev.2adt-consulting.com']`
+  - `supports_credentials=true`
+  - `paths` inclure `api/*` et `sanctum/csrf-cookie`
+
+5) Vérifications
+- Ouvrez `https://dev.2adt-consulting.com` et testez la connexion (cookies Sanctum présents: `XSRF-TOKEN`, `laravel_session`).
+- Testez `https://dev.2adt-consulting.com/api/me` et `.../api/progress` authentifié.
