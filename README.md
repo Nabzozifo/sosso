@@ -88,3 +88,78 @@ L’objectif est de déployer sur un serveur avec MySQL et phpMyAdmin, sans Dock
 
 ---
 Consultez `deploy/apache.conf` et `deploy/nginx.conf` pour des modèles de vhosts.
+
+## Déploiement LWS (.htaccess, sans apache.conf)
+
+Si vous n’avez pas accès à `apache.conf` chez LWS, vous pouvez déployer via `.htaccess` et l’arborescence des dossiers.
+
+### Option A — Sous-domaines séparés (recommandé)
+- Créez deux sous-domaines dans le manager LWS:
+  - `api.votre-domaine.fr` vers `soussou-api/public`
+  - `app.votre-domaine.fr` vers `soussou-game/dist`
+- Côté Laravel, le `.htaccess` par défaut dans `soussou-api/public` gère la réécriture vers `public/index.php`.
+- Côté SPA (React), ajoutez un `.htaccess` dans `soussou-game/dist` pour le fallback en mode history:
+  ```htaccess
+  RewriteEngine On
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+  RewriteRule ^ index.html [L]
+  ```
+- Variables `.env` Laravel typiques:
+  ```env
+  APP_ENV=production
+  APP_URL=https://api.votre-domaine.fr
+  SESSION_DRIVER=file
+  SESSION_DOMAIN=.votre-domaine.fr
+  SESSION_SECURE_COOKIE=true
+  SESSION_SAME_SITE=lax
+  SANCTUM_STATEFUL_DOMAINS=app.votre-domaine.fr,api.votre-domaine.fr,www.votre-domaine.fr
+  ```
+
+### Option B — Un seul domaine avec l’API sous `/api`
+- Placez le build SPA dans la racine web `public_html/`.
+- Créez le pont vers Laravel sans vhost dédié:
+  - `public_html/api/index.php`:
+    ```php
+    <?php require __DIR__ . '/../soussou-api/public/index.php'; ?>
+    ```
+  - `public_html/api/.htaccess`:
+    ```htaccess
+    RewriteEngine On
+    RewriteBase /api
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+    ```
+  - `.htaccess` dans `public_html/` (SPA fallback, hors `/api`):
+    ```htaccess
+    RewriteEngine On
+    RewriteCond %{REQUEST_URI} !^/api/
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
+    RewriteRule ^ index.html [L]
+    ```
+- Variables `.env` Laravel typiques:
+  ```env
+  APP_ENV=production
+  APP_URL=https://www.votre-domaine.fr
+  SESSION_DRIVER=file
+  SESSION_DOMAIN=.votre-domaine.fr
+  SESSION_SECURE_COOKIE=true
+  SESSION_SAME_SITE=lax
+  SANCTUM_STATEFUL_DOMAINS=www.votre-domaine.fr,votre-domaine.fr
+  ```
+
+### Notes LWS et sécurité
+- Activez le SSL et utilisez `https` partout; gardez `SESSION_SECURE_COOKIE=true`.
+- Donnez droits d’écriture à `storage/` et `bootstrap/cache` pour `SESSION_DRIVER=file`.
+- Si des redirections `http` apparaissent derrière proxy, forcez `https` en prod:
+  ```php
+  // App\Providers\AppServiceProvider::boot()
+  if (app()->environment('production')) {
+      \Illuminate\Support\Facades\URL::forceScheme('https');
+  }
+  ```
+- Frontend: utilisez `withCredentials`/`credentials: 'include'` pour les cookies Sanctum.
