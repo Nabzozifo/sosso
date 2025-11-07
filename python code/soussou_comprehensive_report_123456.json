@@ -1,0 +1,97 @@
+{
+  "number": 123456,
+  "soussou_translation": "wúlù k̀ɛḿɛ m̀ɔx̀ɔǵɛŋ nŭn sàxán k̀ɛḿɛ náání tòngó súlí nŭn sénní",
+  "decomposition": {
+    "components": [
+      {
+        "value": 100,
+        "soussou_text": "k̀ɛḿɛ",
+        "type": "thousand_hundred",
+        "rule": "Forme lexicale de base",
+        "explanation": "100 se dit \"k̀ɛḿɛ\" - forme lexicale unique (dans les milliers)"
+      },
+      {
+        "value": 20,
+        "soussou_text": "m̀ɔx̀ɔǵɛŋ",
+        "type": "thousand_twenty",
+        "rule": "Forme lexicale de base",
+        "explanation": "20 se dit \"m̀ɔx̀ɔǵɛŋ\" - forme lexicale unique (dans les milliers)"
+      },
+      {
+        "value": 3,
+        "soussou_text": "sàxán",
+        "type": "thousand_unit",
+        "rule": "Forme lexicale de base",
+        "explanation": "3 se dit \"sàxán\" - forme lexicale unique (dans les milliers)"
+      },
+      {
+        "value": 1000,
+        "soussou_text": "wúlù",
+        "type": "thousand_base",
+        "rule": "Multiplicateur de milliers",
+        "explanation": "123 milliers = 123 × 1000"
+      },
+      {
+        "value": 400,
+        "soussou_text": "k̀ɛḿɛ náání",
+        "type": "hundreds",
+        "rule": "k̀ɛḿɛ + multiplicateur",
+        "explanation": "4 centaines = k̀ɛḿɛ + náání"
+      },
+      {
+        "value": 50,
+        "soussou_text": "tòngó súlí",
+        "type": "tens",
+        "rule": "tòngó + multiplicateur",
+        "explanation": "50 = tòngó + súlí (formateur de dizaines)"
+      },
+      {
+        "value": 6,
+        "soussou_text": "sénní",
+        "type": "unit",
+        "rule": "Forme lexicale de base",
+        "explanation": "6 se dit \"sénní\" - forme lexicale unique"
+      }
+    ],
+    "construction_steps": [
+      "Décomposition du nombre 123456:",
+      "1. Identifier les milliers: 123 × 1000 = 123000",
+      "2. Reste à traiter: 456",
+      "3. Identifier les centaines: 4 × 100 = 400",
+      "4. Identifier les dizaines: 5 × 10 = 50",
+      "5. Identifier les unités: 6",
+      "\nConstruction linguistique:",
+      "1. 100 se dit \"k̀ɛḿɛ\" - forme lexicale unique (dans les milliers)",
+      "2. 20 se dit \"m̀ɔx̀ɔǵɛŋ\" - forme lexicale unique (dans les milliers)",
+      "3. 3 se dit \"sàxán\" - forme lexicale unique (dans les milliers)",
+      "4. 123 milliers = 123 × 1000",
+      "5. 4 centaines = k̀ɛḿɛ + náání",
+      "6. 50 = tòngó + súlí (formateur de dizaines)",
+      "7. 6 se dit \"sénní\" - forme lexicale unique",
+      "\nAssemblage final: k̀ɛḿɛ + m̀ɔx̀ɔǵɛŋ + sàxán + wúlù + k̀ɛḿɛ náání + tòngó súlí + sénní = k̀ɛḿɛ m̀ɔx̀ɔǵɛŋ sàxán wúlù k̀ɛḿɛ náání tòngó súlí sénní"
+    ],
+    "linguistic_rules": [
+      "Règle des milliers: wúlù (1000) + multiplicateur pour les milliers multiples",
+      "Règle des centaines: k̀ɛḿɛ (100) + multiplicateur pour les centaines multiples",
+      "Règle des dizaines: tòngó + multiplicateur (3-9) pour former 30-90",
+      "Règle spéciale: 20 = m̀ɔx̀ɔǵɛŋ (forme lexicale unique)",
+      "Règle de composition: Assemblage hiérarchique (milliers → centaines → dizaines → unités)",
+      "Connecteur additif: 'nŭn' pour joindre les composants de même niveau"
+    ]
+  },
+  "morphological_analysis": {
+    "base_numbers_used": [
+      6
+    ],
+    "connectors_used": [
+      "nŭn"
+    ],
+    "formers_used": [
+      "tòngó"
+    ]
+  },
+  "inference_capability": {
+    "can_generate_beyond_9999": true,
+    "generation_method": "Règles morphologiques + patterns hiérarchiques"
+  }
+}

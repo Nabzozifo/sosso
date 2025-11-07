@@ -1,0 +1,150 @@
+{
+  "base_numbers": {
+    "1": "kérén",
+    "2": "̀fírín",
+    "3": "sàxán",
+    "4": "náání",
+    "5": "súlí",
+    "6": "sénní",
+    "7": "sólófèré",
+    "8": "sólómásàxán",
+    "9": "sólómánáání",
+    "10": "fuú",
+    "20": "m̀ɔx̀ɔǵɛŋ",
+    "100": "k̀ɛḿɛ",
+    "1000": "wúlù kérén"
+  },
+  "morphological_rules": {
+    "units": {
+      "1": "kérén",
+      "2": "̀fírín",
+      "3": "sàxán",
+      "4": "náání",
+      "5": "súlí",
+      "6": "sénní",
+      "7": "sólófèré",
+      "8": "sólómásàxán",
+      "9": "sólómánáání"
+    },
+    "teens": {
+      "11": {
+        "pattern": "fuú nŭn {unit}",
+        "unit": "kérén"
+      },
+      "12": {
+        "pattern": "fuú nŭn {unit}",
+        "unit": "̀fírín"
+      },
+      "13": {
+        "pattern": "fuú nŭn {unit}",
+        "unit": "sàxán"
+      },
+      "14": {
+        "pattern": "fuú nŭn {unit}",
+        "unit": "náání"
+      },
+      "15": {
+        "pattern": "fuú nŭn {unit}",
+        "unit": "súlí"
+      },
+      "16": {
+        "pattern": "fuú nŭn {unit}",
+        "unit": "sénní"
+      },
+      "17": {
+        "pattern": "fuú nŭn {unit}",
+        "unit": "sólófèré"
+      },
+      "18": {
+        "pattern": "fuú nŭn {unit}",
+        "unit": "sólómásàxán"
+      },
+      "19": {
+        "pattern": "fuú nŭn {unit}",
+        "unit": "sólómánáání"
+      }
+    },
+    "tens": {
+      "20": {
+        "base": "m̀ɔx̀ɔǵɛŋ",
+        "pattern": "m̀ɔx̀ɔǵɛŋ"
+      },
+      "30": {
+        "base": "tòngó",
+        "multiplier": "sàxán",
+        "pattern": "tòngó {multiplier}"
+      },
+      "40": {
+        "base": "tòngó",
+        "multiplier": "náání",
+        "pattern": "tòngó {multiplier}"
+      },
+      "50": {
+        "base": "tòngó",
+        "multiplier": "súlí",
+        "pattern": "tòngó {multiplier}"
+      },
+      "60": {
+        "base": "tòngó",
+        "multiplier": "sénní",
+        "pattern": "tòngó {multiplier}"
+      },
+      "70": {
+        "base": "tòngó",
+        "multiplier": "sólófèré",
+        "pattern": "tòngó {multiplier}"
+      },
+      "80": {
+        "base": "tòngó",
+        "multiplier": "sólómásàxán",
+        "pattern": "tòngó {multiplier}"
+      },
+      "90": {
+        "base": "tòngó",
+        "multiplier": "sólómánáání",
+        "pattern": "tòngó {multiplier}"
+      }
+    },
+    "hundreds": {
+      "100": {
+        "base": "k̀ɛḿɛ",
+        "pattern": "k̀ɛḿɛ"
+      }
+    },
+    "thousands": {
+      "1000": {
+        "base": "wúlù kérén",
+        "pattern": "wúlù kérén"
+      },
+      "2000": {
+        "base": "wúlù",
+        "multiplier": "̀fírín",
+        "pattern": "wúlù {multiplier}"
+      },
+      "3000": {
+        "base": "wúlù",
+        "multiplier": "sàxán",
+        "pattern": "wúlù {multiplier}"
+      },
+      "4000": {
+        "base": "wúlù",
+        "multiplier": "náání",
+        "pattern": "wúlù {multiplier}"
+      },
+      "5000": {
+        "base": "wúlù",
+        "multiplier": "súlí",
+        "pattern": "wúlù {multiplier}"
+      }
+    },
+    "connectors": [
+      "nŭn"
+    ],
+    "patterns": {
+      "compound_addition": "nŭn",
+      "ten_formation": "tòngó",
+      "hundred_base": "k̀ɛḿɛ",
+      "thousand_base": "wúlù"
+    }
+  }
+}

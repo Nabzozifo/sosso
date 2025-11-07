@@ -1,0 +1,6 @@
+Collecting editdistance
+  Using cached editdistance-0.8.1-cp311-cp311-win_amd64.whl.metadata (3.9 kB)
+Downloading editdistance-0.8.1-cp311-cp311-win_amd64.whl (79 kB)
+   ---------------------------------------- 79.7/79.7 kB 631.4 kB/s eta 0:00:00
+Installing collected packages: editdistance
+Successfully installed editdistance-0.8.1

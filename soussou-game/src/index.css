@@ -1,0 +1,150 @@
+@import "tailwindcss";
+
+/* Custom styles for the Soussou game */
+body {
+  margin: 0;
+  font-family: 'Gilroy', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom font classes */
+
+.font-gilroy {
+  font-family: 'Gilroy', 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif !important;
+}
+
+/* African Pattern Backgrounds */
+.african-background {
+  background: linear-gradient(135deg, #8B4513 0%, #FFD700 25%, #FF8C00 50%, #228B22 75%, #006400 100%);
+  background-size: 400% 400%;
+  animation: african-gradient 15s ease infinite;
+  position: relative;
+}
+
+.african-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 25% 25%, #FFD700 2px, transparent 2px),
+    radial-gradient(circle at 75% 75%, #FF8C00 1px, transparent 1px),
+    linear-gradient(45deg, transparent 40%, rgba(255, 215, 0, 0.1) 50%, transparent 60%);
+  background-size: 50px 50px, 30px 30px, 100px 100px;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.full-african-pattern {
+  background: linear-gradient(45deg, #8B4513, #FFD700, #FF8C00, #228B22);
+  background-size: 200% 200%;
+  animation: african-gradient 20s ease infinite;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  opacity: 0.05;
+}
+
+.full-african-pattern::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255, 215, 0, 0.1) 10px, rgba(255, 215, 0, 0.1) 20px),
+    repeating-linear-gradient(-45deg, transparent, transparent 15px, rgba(255, 140, 0, 0.1) 15px, rgba(255, 140, 0, 0.1) 30px);
+  opacity: 0.5;
+}
+
+/* Glass Morphism Effect */
+.glass-morphism {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+/* African Pattern Animations */
+@keyframes african-gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Cultural Text Styles */
+.cultural-greeting {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.wisdom-text {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.african-card-title {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.cultural-symbol {
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.african-blessing {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* Pattern Overlays */
+.african-pattern-1 {
+  background-image: 
+    radial-gradient(circle at 20% 20%, #FFD700 3px, transparent 3px),
+    radial-gradient(circle at 80% 80%, #FF8C00 2px, transparent 2px);
+  background-size: 60px 60px, 40px 40px;
+  opacity: 0.1;
+  animation: pattern-float 12s ease-in-out infinite;
+}
+
+.african-pattern-2 {
+  background-image: 
+    linear-gradient(45deg, transparent 30%, rgba(139, 69, 19, 0.1) 50%, transparent 70%),
+    linear-gradient(-45deg, transparent 30%, rgba(255, 215, 0, 0.1) 50%, transparent 70%);
+  background-size: 80px 80px, 60px 60px;
+  opacity: 0.15;
+  animation: pattern-float 15s ease-in-out infinite reverse;
+}
+
+@keyframes pattern-float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(2deg); }
+}
+
+/* Proverb Box Styling */
+.proverb-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.proverb-box::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+  100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+}

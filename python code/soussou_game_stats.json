@@ -1,0 +1,17 @@
+{
+  "games_played": 0,
+  "correct_answers": 0,
+  "total_questions": 0,
+  "best_streak": 0,
+  "current_streak": 0,
+  "levels_completed": [],
+  "time_played": 8.059672355651855,
+  "favorite_numbers": [],
+  "learning_progress": {
+    "basic_numbers": 0,
+    "medium_numbers": 0,
+    "large_numbers": 0,
+    "huge_numbers": 0,
+    "inference_numbers": 0
+  }
+}

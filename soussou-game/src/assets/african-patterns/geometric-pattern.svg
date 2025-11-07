@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <pattern id="trianglePattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="#F4A460"/>
+      <polygon points="20,5 35,30 5,30" fill="#8B4513"/>
+      <polygon points="20,35 5,10 35,10" fill="#CD853F"/>
+    </pattern>
+    
+    <pattern id="diamondPattern" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+      <rect width="30" height="30" fill="#DEB887"/>
+      <polygon points="15,3 27,15 15,27 3,15" fill="#D2691E"/>
+      <polygon points="15,8 22,15 15,22 8,15" fill="#8B4513"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background with triangle pattern -->
+  <rect x="0" y="0" width="200" height="100" fill="url(#trianglePattern)"/>
+  
+  <!-- Background with diamond pattern -->
+  <rect x="0" y="100" width="200" height="100" fill="url(#diamondPattern)"/>
+  
+  <!-- Central decorative elements -->
+  <g transform="translate(100, 100)">
+    <circle r="30" fill="none" stroke="#8B4513" stroke-width="3"/>
+    <polygon points="-15,-15 15,-15 15,15 -15,15" fill="#CD853F" opacity="0.8"/>
+    <polygon points="-10,-10 10,-10 10,10 -10,10" fill="#F4A460" opacity="0.9"/>
+    <circle r="5" fill="#8B4513"/>
+  </g>
+  
+  <!-- Corner decorations -->
+  <g id="corner-decoration">
+    <polygon points="10,10 30,10 20,30" fill="#D2691E"/>
+    <polygon points="170,10 190,10 180,30" fill="#D2691E"/>
+    <polygon points="10,170 30,190 10,190" fill="#D2691E"/>
+    <polygon points="170,170 190,190 170,190" fill="#D2691E"/>
+  </g>
+</svg>

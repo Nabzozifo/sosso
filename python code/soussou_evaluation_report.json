@@ -1,0 +1,694 @@
+{
+  "evaluation_summary": {
+    "reference_data_size": 9999,
+    "models_evaluated": [
+      "Rule-Based System"
+    ],
+    "evaluation_timestamp": "2025-09-12 14:42:32"
+  },
+  "individual_results": {
+    "Rule-Based System": {
+      "model_name": "Rule-Based System",
+      "test_count": 100,
+      "correct": 1,
+      "incorrect": 99,
+      "errors": [
+        {
+          "number": "2743",
+          "expected": "wúlù ̀fírín k̀ɛḿɛ sólófèré tòngó náání nŭn sàxán",
+          "generated": "wúlù ̀fírín k̀ɛḿɛ sólófèré tòngó ̀fírín nŭn sàxán",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "2528",
+          "expected": "wúlù ̀fírín k̀ɛḿɛ súlí m̀ɔx̀ɔǵɛŋ nŭn sólómásàxán",
+          "generated": "wúlù ̀fírín k̀ɛḿɛ súlí m̀ɔx̀ɔǵɛŋ nŭn sólómásàxán",
+          "error_type": "extra_m̀ɔx̀ɔǵɛŋ"
+        },
+        {
+          "number": "1768",
+          "expected": "wúlù kérén k̀ɛḿɛ sólófèré tòngó sénní nŭn sólómásàxán",
+          "generated": "wúlù kérén k̀ɛḿɛ sólófèré tòngó náání nŭn sólómásàxán",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "1175",
+          "expected": "wúlù kérén k̀ɛḿɛ tòngó sólófèré nŭn súlí",
+          "generated": "wúlù kérén k̀ɛḿɛ tòngó súlí nŭn súlí",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "2327",
+          "expected": "wúlù ̀fírín k̀ɛḿɛ sàxán m̀ɔx̀ɔǵɛŋ nŭn sólófèré",
+          "generated": "wúlù ̀fírín k̀ɛḿɛ sàxán m̀ɔx̀ɔǵɛŋ nŭn sólófèré",
+          "error_type": "extra_m̀ɔx̀ɔǵɛŋ"
+        },
+        {
+          "number": "9588",
+          "expected": "wúlù sólómánáání k̀ɛḿɛ súlí tòngó sólómásàxán nŭn sólómásàxán",
+          "generated": "wúlù sólómánáání k̀ɛḿɛ súlí tòngó sénní nŭn sólómásàxán",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "7741",
+          "expected": "wúlù sólófèré k̀ɛḿɛ sólófèré tòngó náání nŭn kérén",
+          "generated": "wúlù sólófèré k̀ɛḿɛ sólófèré tòngó ̀fírín nŭn kérén",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "724",
+          "expected": "k̀ɛḿɛ sólófèré m̀ɔx̀ɔǵɛŋ nŭn náání",
+          "generated": "k̀ɛḿɛ sólófèré m̀ɔx̀ɔǵɛŋ nŭn náání",
+          "error_type": "extra_m̀ɔx̀ɔǵɛŋ"
+        },
+        {
+          "number": "1121",
+          "expected": "wúlù kérén k̀ɛḿɛ m̀ɔx̀ɔǵɛŋ nŭn kérén",
+          "generated": "wúlù kérén k̀ɛḿɛ m̀ɔx̀ɔǵɛŋ nŭn kérén",
+          "error_type": "extra_m̀ɔx̀ɔǵɛŋ"
+        },
+        {
+          "number": "3745",
+          "expected": "wúlù sàxán k̀ɛḿɛ sólófèré tòngó náání nŭn súlí",
+          "generated": "wúlù sàxán k̀ɛḿɛ sólófèré tòngó ̀fírín nŭn súlí",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "3779",
+          "expected": "wúlù sàxán k̀ɛḿɛ sólófèré tòngó sólófèré nŭn sólómánáání",
+          "generated": "wúlù sàxán k̀ɛḿɛ sólófèré tòngó súlí nŭn sólómánáání",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "2843",
+          "expected": "wúlù ̀fírín k̀ɛḿɛ sólómásàxán tòngó náání nŭn sàxán",
+          "generated": "wúlù ̀fírín k̀ɛḿɛ sólómásàxán tòngó ̀fírín nŭn sàxán",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "6939",
+          "expected": "wúlù sénní k̀ɛḿɛ sólómánáání tòngó sàxán nŭn sólómánáání",
+          "generated": "wúlù sénní k̀ɛḿɛ sólómánáání tòngó kérén nŭn sólómánáání",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "564",
+          "expected": "k̀ɛḿɛ súlí tòngó sénní nŭn náání",
+          "generated": "k̀ɛḿɛ súlí tòngó náání nŭn náání",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "5202",
+          "expected": "wúlù súlí k̀ɛḿɛ ̀fírín ̀fírín",
+          "generated": "wúlù súlí k̀ɛḿɛ ̀fírín ̀fírín",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "3834",
+          "expected": "wúlù sàxán k̀ɛḿɛ sólómásàxán tòngó sàxán nŭn náání",
+          "generated": "wúlù sàxán k̀ɛḿɛ sólómásàxán tòngó kérén nŭn náání",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "243",
+          "expected": "k̀ɛḿɛ ̀fírín tòngó náání nŭn sàxán",
+          "generated": "k̀ɛḿɛ ̀fírín tòngó ̀fírín nŭn sàxán",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "3672",
+          "expected": "wúlù sàxán k̀ɛḿɛ sénní tòngó sólófèré nŭn ̀fírín",
+          "generated": "wúlù sàxán k̀ɛḿɛ sénní tòngó súlí nŭn ̀fírín",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "7970",
+          "expected": "wúlù sólófèré k̀ɛḿɛ sólómánáání tòngó sólófèré",
+          "generated": "wúlù sólófèré k̀ɛḿɛ sólómánáání tòngó súlí",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "1400",
+          "expected": "wúlù kérén k̀ɛḿɛ náání",
+          "generated": "wúlù kérén k̀ɛḿɛ náání",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "2029",
+          "expected": "wúlù ̀fírín m̀ɔx̀ɔǵɛŋ nŭn sólómánáání",
+          "generated": "wúlù ̀fírín m̀ɔx̀ɔǵɛŋ nŭn sólómánáání",
+          "error_type": "extra_m̀ɔx̀ɔǵɛŋ"
+        },
+        {
+          "number": "8544",
+          "expected": "wúlù sólómásàxán k̀ɛḿɛ súlí tòngó náání nŭn náání",
+          "generated": "wúlù sólómásàxán k̀ɛḿɛ súlí tòngó ̀fírín nŭn náání",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "8640",
+          "expected": "wúlù sólómásàxán k̀ɛḿɛ sénní tòngó náání",
+          "generated": "wúlù sólómásàxán k̀ɛḿɛ sénní tòngó ̀fírín",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "1872",
+          "expected": "wúlù kérén k̀ɛḿɛ sólómásàxán tòngó sólófèré nŭn ̀fírín",
+          "generated": "wúlù kérén k̀ɛḿɛ sólómásàxán tòngó súlí nŭn ̀fírín",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "2815",
+          "expected": "wúlù ̀fírín k̀ɛḿɛ sólómásàxán fuú nŭn súlí",
+          "generated": "wúlù ̀fírín k̀ɛḿɛ sólómásàxán fuú nŭn súlí",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "1920",
+          "expected": "wúlù kérén k̀ɛḿɛ sólómánáání m̀ɔx̀ɔǵɛŋ",
+          "generated": "wúlù kérén k̀ɛḿɛ sólómánáání m̀ɔx̀ɔǵɛŋ",
+          "error_type": "extra_m̀ɔx̀ɔǵɛŋ"
+        },
+        {
+          "number": "9295",
+          "expected": "wúlù sólómánáání k̀ɛḿɛ ̀fírín tòngó sólómánáání nŭn súlí",
+          "generated": "wúlù sólómánáání k̀ɛḿɛ ̀fírín tòngó sólófèré nŭn súlí",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "7958",
+          "expected": "wúlù sólófèré k̀ɛḿɛ sólómánáání tòngó súlí nŭn sólómásàxán",
+          "generated": "wúlù sólófèré k̀ɛḿɛ sólómánáání tòngó sàxán nŭn sólómásàxán",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "1226",
+          "expected": "wúlù kérén k̀ɛḿɛ ̀fírín m̀ɔx̀ɔǵɛŋ nŭn sénní",
+          "generated": "wúlù kérén k̀ɛḿɛ ̀fírín m̀ɔx̀ɔǵɛŋ nŭn sénní",
+          "error_type": "extra_m̀ɔx̀ɔǵɛŋ"
+        },
+        {
+          "number": "6022",
+          "expected": "wúlù sénní m̀ɔx̀ɔǵɛŋ nŭn ̀fírín",
+          "generated": "wúlù sénní m̀ɔx̀ɔǵɛŋ nŭn ̀fírín",
+          "error_type": "extra_m̀ɔx̀ɔǵɛŋ"
+        },
+        {
+          "number": "8095",
+          "expected": "wúlù sólómásàxán tòngó sólómánáání nŭn súlí",
+          "generated": "wúlù sólómásàxán tòngó sólófèré nŭn súlí",
+          "error_type": "other"
+        },
+        {
+          "number": "4712",
+          "expected": "wúlù náání k̀ɛḿɛ sólófèré fuú nŭn ̀fírín",
+          "generated": "wúlù náání k̀ɛḿɛ sólófèré fuú nŭn ̀fírín",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "5236",
+          "expected": "wúlù súlí k̀ɛḿɛ ̀fírín tòngó sàxán nŭn sénní",
+          "generated": "wúlù súlí k̀ɛḿɛ ̀fírín tòngó kérén nŭn sénní",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "2217",
+          "expected": "wúlù ̀fírín k̀ɛḿɛ ̀fírín fuú nŭn sólófèré",
+          "generated": "wúlù ̀fírín k̀ɛḿɛ ̀fírín fuú nŭn sólófèré",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "845",
+          "expected": "k̀ɛḿɛ sólómásàxán tòngó náání nŭn súlí",
+          "generated": "k̀ɛḿɛ sólómásàxán tòngó ̀fírín nŭn súlí",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "5733",
+          "expected": "wúlù súlí k̀ɛḿɛ sólófèré tòngó sàxán nŭn sàxán",
+          "generated": "wúlù súlí k̀ɛḿɛ sólófèré tòngó kérén nŭn sàxán",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "9355",
+          "expected": "wúlù sólómánáání k̀ɛḿɛ sàxán tòngó súlí nŭn súlí",
+          "generated": "wúlù sólómánáání k̀ɛḿɛ sàxán tòngó sàxán nŭn súlí",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "1945",
+          "expected": "wúlù kérén k̀ɛḿɛ sólómánáání tòngó náání nŭn súlí",
+          "generated": "wúlù kérén k̀ɛḿɛ sólómánáání tòngó ̀fírín nŭn súlí",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "5488",
+          "expected": "wúlù súlí k̀ɛḿɛ náání tòngó sólómásàxán nŭn sólómásàxán",
+          "generated": "wúlù súlí k̀ɛḿɛ náání tòngó sénní nŭn sólómásàxán",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "5862",
+          "expected": "wúlù súlí k̀ɛḿɛ sólómásàxán tòngó sénní nŭn ̀fírín",
+          "generated": "wúlù súlí k̀ɛḿɛ sólómásàxán tòngó náání nŭn ̀fírín",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "6681",
+          "expected": "wúlù sénní k̀ɛḿɛ sénní tòngó sólómásàxán nŭn kérén",
+          "generated": "wúlù sénní k̀ɛḿɛ sénní tòngó sénní nŭn kérén",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "2831",
+          "expected": "wúlù ̀fírín k̀ɛḿɛ sólómásàxán tòngó sàxán nŭn kérén",
+          "generated": "wúlù ̀fírín k̀ɛḿɛ sólómásàxán tòngó kérén nŭn kérén",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "8429",
+          "expected": "wúlù sólómásàxán k̀ɛḿɛ náání m̀ɔx̀ɔǵɛŋ nŭn sólómánáání",
+          "generated": "wúlù sólómásàxán k̀ɛḿɛ náání m̀ɔx̀ɔǵɛŋ nŭn sólómánáání",
+          "error_type": "extra_m̀ɔx̀ɔǵɛŋ"
+        },
+        {
+          "number": "8128",
+          "expected": "wúlù sólómásàxán k̀ɛḿɛ m̀ɔx̀ɔǵɛŋ nŭn sólómásàxán",
+          "generated": "wúlù sólómásàxán k̀ɛḿɛ m̀ɔx̀ɔǵɛŋ nŭn sólómásàxán",
+          "error_type": "extra_m̀ɔx̀ɔǵɛŋ"
+        },
+        {
+          "number": "9510",
+          "expected": "wúlù sólómánáání k̀ɛḿɛ súlí fuú",
+          "generated": "wúlù sólómánáání k̀ɛḿɛ súlí fuú",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "5531",
+          "expected": "wúlù súlí k̀ɛḿɛ súlí tòngó sàxán nŭn kérén",
+          "generated": "wúlù súlí k̀ɛḿɛ súlí tòngó kérén nŭn kérén",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "3576",
+          "expected": "wúlù sàxán k̀ɛḿɛ súlí tòngó sólófèré nŭn sénní",
+          "generated": "wúlù sàxán k̀ɛḿɛ súlí tòngó súlí nŭn sénní",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "7718",
+          "expected": "wúlù sólófèré k̀ɛḿɛ sólófèré fuú nŭn sólómásàxán",
+          "generated": "wúlù sólófèré k̀ɛḿɛ sólófèré fuú nŭn sólómásàxán",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "5088",
+          "expected": "wúlù súlí tòngó sólómásàxán nŭn sólómásàxán",
+          "generated": "wúlù súlí tòngó sénní nŭn sólómásàxán",
+          "error_type": "other"
+        },
+        {
+          "number": "5061",
+          "expected": "wúlù súlí tòngó sénní nŭn kérén",
+          "generated": "wúlù súlí tòngó náání nŭn kérén",
+          "error_type": "other"
+        },
+        {
+          "number": "4863",
+          "expected": "wúlù náání k̀ɛḿɛ sólómásàxán tòngó sénní nŭn sàxán",
+          "generated": "wúlù náání k̀ɛḿɛ sólómásàxán tòngó náání nŭn sàxán",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "2585",
+          "expected": "wúlù ̀fírín k̀ɛḿɛ súlí tòngó sólómásàxán nŭn súlí",
+          "generated": "wúlù ̀fírín k̀ɛḿɛ súlí tòngó sénní nŭn súlí",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "9146",
+          "expected": "wúlù sólómánáání k̀ɛḿɛ tòngó náání nŭn sénní",
+          "generated": "wúlù sólómánáání k̀ɛḿɛ tòngó ̀fírín nŭn sénní",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "3505",
+          "expected": "wúlù sàxán k̀ɛḿɛ súlí súlí",
+          "generated": "wúlù sàxán k̀ɛḿɛ súlí súlí",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "2358",
+          "expected": "wúlù ̀fírín k̀ɛḿɛ sàxán tòngó súlí nŭn sólómásàxán",
+          "generated": "wúlù ̀fírín k̀ɛḿɛ sàxán tòngó sàxán nŭn sólómásàxán",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "8341",
+          "expected": "wúlù sólómásàxán k̀ɛḿɛ sàxán tòngó náání nŭn kérén",
+          "generated": "wúlù sólómásàxán k̀ɛḿɛ sàxán tòngó ̀fírín nŭn kérén",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "7080",
+          "expected": "wúlù sólófèré tòngó sólómásàxán",
+          "generated": "wúlù sólófèré tòngó sénní",
+          "error_type": "other"
+        },
+        {
+          "number": "4613",
+          "expected": "wúlù náání k̀ɛḿɛ sénní fuú nŭn sàxán",
+          "generated": "wúlù náání k̀ɛḿɛ sénní fuú nŭn sàxán",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "2667",
+          "expected": "wúlù ̀fírín k̀ɛḿɛ sénní tòngó sénní nŭn sólófèré",
+          "generated": "wúlù ̀fírín k̀ɛḿɛ sénní tòngó náání nŭn sólófèré",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "4341",
+          "expected": "wúlù náání k̀ɛḿɛ sàxán tòngó náání nŭn kérén",
+          "generated": "wúlù náání k̀ɛḿɛ sàxán tòngó ̀fírín nŭn kérén",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "973",
+          "expected": "k̀ɛḿɛ sólómánáání tòngó sólófèré nŭn sàxán",
+          "generated": "k̀ɛḿɛ sólómánáání tòngó súlí nŭn sàxán",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "6793",
+          "expected": "wúlù sénní k̀ɛḿɛ sólófèré tòngó sólómánáání nŭn sàxán",
+          "generated": "wúlù sénní k̀ɛḿɛ sólófèré tòngó sólófèré nŭn sàxán",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "9100",
+          "expected": "wúlù sólómánáání k̀ɛḿɛ",
+          "generated": "wúlù sólómánáání k̀ɛḿɛ",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "145",
+          "expected": "k̀ɛḿɛ tòngó náání nŭn súlí",
+          "generated": "k̀ɛḿɛ tòngó ̀fírín nŭn súlí",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "9773",
+          "expected": "wúlù sólómánáání k̀ɛḿɛ sólófèré tòngó sólófèré nŭn sàxán",
+          "generated": "wúlù sólómánáání k̀ɛḿɛ sólófèré tòngó súlí nŭn sàxán",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "5856",
+          "expected": "wúlù súlí k̀ɛḿɛ sólómásàxán tòngó súlí nŭn sénní",
+          "generated": "wúlù súlí k̀ɛḿɛ sólómásàxán tòngó sàxán nŭn sénní",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "2873",
+          "expected": "wúlù ̀fírín k̀ɛḿɛ sólómásàxán tòngó sólófèré nŭn sàxán",
+          "generated": "wúlù ̀fírín k̀ɛḿɛ sólómásàxán tòngó súlí nŭn sàxán",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "2398",
+          "expected": "wúlù ̀fírín k̀ɛḿɛ sàxán tòngó sólómánáání nŭn sólómásàxán",
+          "generated": "wúlù ̀fírín k̀ɛḿɛ sàxán tòngó sólófèré nŭn sólómásàxán",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "4377",
+          "expected": "wúlù náání k̀ɛḿɛ sàxán tòngó sólófèré nŭn sólófèré",
+          "generated": "wúlù náání k̀ɛḿɛ sàxán tòngó súlí nŭn sólófèré",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "9739",
+          "expected": "wúlù sólómánáání k̀ɛḿɛ sólófèré tòngó sàxán nŭn sólómánáání",
+          "generated": "wúlù sólómánáání k̀ɛḿɛ sólófèré tòngó kérén nŭn sólómánáání",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "2798",
+          "expected": "wúlù ̀fírín k̀ɛḿɛ sólófèré tòngó sólómánáání nŭn sólómásàxán",
+          "generated": "wúlù ̀fírín k̀ɛḿɛ sólófèré tòngó sólófèré nŭn sólómásàxán",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "7259",
+          "expected": "wúlù sólófèré k̀ɛḿɛ ̀fírín tòngó súlí nŭn sólómánáání",
+          "generated": "wúlù sólófèré k̀ɛḿɛ ̀fírín tòngó sàxán nŭn sólómánáání",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "8824",
+          "expected": "wúlù sólómásàxán k̀ɛḿɛ sólómásàxán m̀ɔx̀ɔǵɛŋ nŭn náání",
+          "generated": "wúlù sólómásàxán k̀ɛḿɛ sólómásàxán m̀ɔx̀ɔǵɛŋ nŭn náání",
+          "error_type": "extra_m̀ɔx̀ɔǵɛŋ"
+        },
+        {
+          "number": "8195",
+          "expected": "wúlù sólómásàxán k̀ɛḿɛ tòngó sólómánáání nŭn súlí",
+          "generated": "wúlù sólómásàxán k̀ɛḿɛ tòngó sólófèré nŭn súlí",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "2752",
+          "expected": "wúlù ̀fírín k̀ɛḿɛ sólófèré tòngó súlí nŭn ̀fírín",
+          "generated": "wúlù ̀fírín k̀ɛḿɛ sólófèré tòngó sàxán nŭn ̀fírín",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "403",
+          "expected": "k̀ɛḿɛ náání sàxán",
+          "generated": "k̀ɛḿɛ náání sàxán",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "7347",
+          "expected": "wúlù sólófèré k̀ɛḿɛ sàxán tòngó náání nŭn sólófèré",
+          "generated": "wúlù sólófèré k̀ɛḿɛ sàxán tòngó ̀fírín nŭn sólófèré",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "1995",
+          "expected": "wúlù kérén k̀ɛḿɛ sólómánáání tòngó sólómánáání nŭn súlí",
+          "generated": "wúlù kérén k̀ɛḿɛ sólómánáání tòngó sólófèré nŭn súlí",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "4304",
+          "expected": "wúlù náání k̀ɛḿɛ sàxán náání",
+          "generated": "wúlù náání k̀ɛḿɛ sàxán náání",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "780",
+          "expected": "k̀ɛḿɛ sólófèré tòngó sólómásàxán",
+          "generated": "k̀ɛḿɛ sólófèré tòngó sénní",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "8778",
+          "expected": "wúlù sólómásàxán k̀ɛḿɛ sólófèré tòngó sólófèré nŭn sólómásàxán",
+          "generated": "wúlù sólómásàxán k̀ɛḿɛ sólófèré tòngó súlí nŭn sólómásàxán",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "6077",
+          "expected": "wúlù sénní tòngó sólófèré nŭn sólófèré",
+          "generated": "wúlù sénní tòngó súlí nŭn sólófèré",
+          "error_type": "other"
+        },
+        {
+          "number": "4716",
+          "expected": "wúlù náání k̀ɛḿɛ sólófèré fuú nŭn sénní",
+          "generated": "wúlù náání k̀ɛḿɛ sólófèré fuú nŭn sénní",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "6031",
+          "expected": "wúlù sénní tòngó sàxán nŭn kérén",
+          "generated": "wúlù sénní tòngó kérén nŭn kérén",
+          "error_type": "other"
+        },
+        {
+          "number": "7869",
+          "expected": "wúlù sólófèré k̀ɛḿɛ sólómásàxán tòngó sénní nŭn sólómánáání",
+          "generated": "wúlù sólófèré k̀ɛḿɛ sólómásàxán tòngó náání nŭn sólómánáání",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "9603",
+          "expected": "wúlù sólómánáání k̀ɛḿɛ sénní sàxán",
+          "generated": "wúlù sólómánáání k̀ɛḿɛ sénní sàxán",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "7330",
+          "expected": "wúlù sólófèré k̀ɛḿɛ sàxán tòngó sàxán",
+          "generated": "wúlù sólófèré k̀ɛḿɛ sàxán tòngó kérén",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "8223",
+          "expected": "wúlù sólómásàxán k̀ɛḿɛ ̀fírín m̀ɔx̀ɔǵɛŋ nŭn sàxán",
+          "generated": "wúlù sólómásàxán k̀ɛḿɛ ̀fírín m̀ɔx̀ɔǵɛŋ nŭn sàxán",
+          "error_type": "extra_m̀ɔx̀ɔǵɛŋ"
+        },
+        {
+          "number": "4474",
+          "expected": "wúlù náání k̀ɛḿɛ náání tòngó sólófèré nŭn náání",
+          "generated": "wúlù náání k̀ɛḿɛ náání tòngó súlí nŭn náání",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "2081",
+          "expected": "wúlù ̀fírín tòngó sólómásàxán nŭn kérén",
+          "generated": "wúlù ̀fírín tòngó sénní nŭn kérén",
+          "error_type": "other"
+        },
+        {
+          "number": "7552",
+          "expected": "wúlù sólófèré k̀ɛḿɛ súlí tòngó súlí nŭn ̀fírín",
+          "generated": "wúlù sólófèré k̀ɛḿɛ súlí tòngó sàxán nŭn ̀fírín",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "9306",
+          "expected": "wúlù sólómánáání k̀ɛḿɛ sàxán sénní",
+          "generated": "wúlù sólómánáání k̀ɛḿɛ sàxán sénní",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "9278",
+          "expected": "wúlù sólómánáání k̀ɛḿɛ ̀fírín tòngó sólófèré nŭn sólómásàxán",
+          "generated": "wúlù sólómánáání k̀ɛḿɛ ̀fírín tòngó súlí nŭn sólómásàxán",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "1150",
+          "expected": "wúlù kérén k̀ɛḿɛ tòngó súlí",
+          "generated": "wúlù kérén k̀ɛḿɛ tòngó sàxán",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "1096",
+          "expected": "wúlù kérén tòngó sólómánáání nŭn sénní",
+          "generated": "wúlù kérén tòngó sólófèré nŭn sénní",
+          "error_type": "other"
+        },
+        {
+          "number": "1858",
+          "expected": "wúlù kérén k̀ɛḿɛ sólómásàxán tòngó súlí nŭn sólómásàxán",
+          "generated": "wúlù kérén k̀ɛḿɛ sólómásàxán tòngó sàxán nŭn sólómásàxán",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "4927",
+          "expected": "wúlù náání k̀ɛḿɛ sólómánáání m̀ɔx̀ɔǵɛŋ nŭn sólófèré",
+          "generated": "wúlù náání k̀ɛḿɛ sólómánáání m̀ɔx̀ɔǵɛŋ nŭn sólófèré",
+          "error_type": "extra_m̀ɔx̀ɔǵɛŋ"
+        },
+        {
+          "number": "7951",
+          "expected": "wúlù sólófèré k̀ɛḿɛ sólómánáání tòngó súlí nŭn kérén",
+          "generated": "wúlù sólófèré k̀ɛḿɛ sólómánáání tòngó sàxán nŭn kérén",
+          "error_type": "extra_k̀ɛḿɛ"
+        },
+        {
+          "number": "3837",
+          "expected": "wúlù sàxán k̀ɛḿɛ sólómásàxán tòngó sàxán nŭn sólófèré",
+          "generated": "wúlù sàxán k̀ɛḿɛ sólómásàxán tòngó kérén nŭn sólófèré",
+          "error_type": "extra_k̀ɛḿɛ"
+        }
+      ],
+      "performance_metrics": {
+        "hundreds": {
+          "total": 8,
+          "correct": 0,
+          "errors": 8,
+          "accuracy": 0.0
+        },
+        "thousands": {
+          "total": 92,
+          "correct": 1,
+          "errors": 91,
+          "accuracy": 0.010869565217391304
+        }
+      },
+      "timing": {
+        "total_time": 0.0,
+        "avg_time_per_number": 0.0
+      },
+      "detailed_analysis": {
+        "error_types": {
+          "extra_k̀ɛḿɛ": 78,
+          "extra_m̀ɔx̀ɔǵɛŋ": 13,
+          "other": 8
+        },
+        "error_by_range": {
+          "1000+": 91,
+          "100-999": 8
+        },
+        "most_problematic_numbers": [],
+        "pattern_analysis": {}
+      },
+      "accuracy": 0.01,
+      "error_rate": 0.99
+    }
+  },
+  "comparative_analysis": {
+    "accuracy_comparison": {
+      "Rule-Based System": 0.01
+    },
+    "speed_comparison": {
+      "Rule-Based System": 0.0
+    },
+    "error_type_comparison": {},
+    "category_performance": {
+      "Rule-Based System": {
+        "hundreds": 0.0,
+        "thousands": 0.010869565217391304
+      }
+    }
+  },
+  "model_ranking": {
+    "by_accuracy": [
+      [
+        "Rule-Based System",
+        0.01
+      ]
+    ],
+    "by_speed": [
+      [
+        "Rule-Based System",
+        0.0
+      ]
+    ],
+    "by_overall_score": [
+      [
+        "Rule-Based System",
+        0.307
+      ]
+    ]
+  },
+  "recommendations": {
+    "best_overall_model": "Rule-Based System",
+    "best_for_accuracy": "Rule-Based System",
+    "best_for_speed": "Rule-Based System",
+    "improvement_suggestions": [
+      "Rule-Based System: Précision faible (0.010), analyser les erreurs de type ['extra_k̀ɛḿɛ', 'extra_m̀ɔx̀ɔǵɛŋ', 'other']"
+    ],
+    "use_case_recommendations": {
+      "production_high_volume": "Rule-Based System",
+      "research_high_accuracy": "Rule-Based System",
+      "general_purpose": "Rule-Based System"
+    }
+  }
+}

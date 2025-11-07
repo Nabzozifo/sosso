@@ -1,0 +1,25 @@
+{
+  "system_name": "Système Soussou Amélioré",
+  "timestamp": 1757685194.0307121,
+  "performance": {
+    "accuracy": 1.0,
+    "avg_time_ms": 0.21968579292297363
+  },
+  "features": [
+    "Analyse morphologique complète",
+    "Extraction de patterns réels du CSV",
+    "Génération basée sur les règles",
+    "Support complet 1-9999",
+    "Précision 100%"
+  ],
+  "technical_details": {
+    "data_source": "nombres_soussou_1_9999.csv",
+    "total_entries": 9999,
+    "base_numbers": 12,
+    "patterns_extracted": {
+      "tens": 7,
+      "hundreds": 8,
+      "thousands": 4
+    }
+  }
+}

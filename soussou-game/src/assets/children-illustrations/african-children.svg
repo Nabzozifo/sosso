@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <!-- Child 1 - African girl -->
+  <g id="african-girl" transform="translate(50, 50)">
+    <!-- Head -->
+    <circle cx="40" cy="40" r="25" fill="#8B4513"/>
+    <!-- Hair -->
+    <path d="M15 25 Q40 10 65 25 Q60 15 40 15 Q20 15 15 25" fill="#2F1B14"/>
+    <circle cx="25" cy="20" r="3" fill="#2F1B14"/>
+    <circle cx="35" cy="18" r="3" fill="#2F1B14"/>
+    <circle cx="45" cy="18" r="3" fill="#2F1B14"/>
+    <circle cx="55" cy="20" r="3" fill="#2F1B14"/>
+    <!-- Eyes -->
+    <circle cx="33" cy="35" r="3" fill="white"/>
+    <circle cx="47" cy="35" r="3" fill="white"/>
+    <circle cx="33" cy="35" r="1.5" fill="black"/>
+    <circle cx="47" cy="35" r="1.5" fill="black"/>
+    <!-- Nose -->
+    <ellipse cx="40" cy="42" rx="1" ry="2" fill="#654321"/>
+    <!-- Mouth -->
+    <path d="M36 48 Q40 52 44 48" stroke="#654321" stroke-width="2" fill="none"/>
+    <!-- Body -->
+    <rect x="25" y="65" width="30" height="40" fill="#FF6B35" rx="5"/>
+    <!-- Arms -->
+    <rect x="10" y="70" width="15" height="25" fill="#8B4513" rx="7"/>
+    <rect x="55" y="70" width="15" height="25" fill="#8B4513" rx="7"/>
+    <!-- Legs -->
+    <rect x="30" y="105" width="8" height="30" fill="#8B4513" rx="4"/>
+    <rect x="42" y="105" width="8" height="30" fill="#8B4513" rx="4"/>
+    <!-- Feet -->
+    <ellipse cx="34" cy="140" rx="6" ry="4" fill="#654321"/>
+    <ellipse cx="46" cy="140" rx="6" ry="4" fill="#654321"/>
+  </g>
+  
+  <!-- Child 2 - Mixed race boy -->
+  <g id="mixed-race-boy" transform="translate(200, 50)">
+    <!-- Head -->
+    <circle cx="40" cy="40" r="25" fill="#D2B48C"/>
+    <!-- Hair -->
+    <path d="M18 28 Q40 12 62 28 Q58 18 40 18 Q22 18 18 28" fill="#8B4513"/>
+    <!-- Eyes -->
+    <circle cx="33" cy="35" r="3" fill="white"/>
+    <circle cx="47" cy="35" r="3" fill="white"/>
+    <circle cx="33" cy="35" r="1.5" fill="brown"/>
+    <circle cx="47" cy="35" r="1.5" fill="brown"/>
+    <!-- Nose -->
+    <ellipse cx="40" cy="42" rx="1.5" ry="2" fill="#CD853F"/>
+    <!-- Mouth -->
+    <path d="M36 48 Q40 52 44 48" stroke="#8B4513" stroke-width="2" fill="none"/>
+    <!-- Body -->
+    <rect x="25" y="65" width="30" height="40" fill="#4169E1" rx="5"/>
+    <!-- Arms -->
+    <rect x="10" y="70" width="15" height="25" fill="#D2B48C" rx="7"/>
+    <rect x="55" y="70" width="15" height="25" fill="#D2B48C" rx="7"/>
+    <!-- Legs -->
+    <rect x="30" y="105" width="8" height="30" fill="#D2B48C" rx="4"/>
+    <rect x="42" y="105" width="8" height="30" fill="#D2B48C" rx="4"/>
+    <!-- Feet -->
+    <ellipse cx="34" cy="140" rx="6" ry="4" fill="#8B4513"/>
+    <ellipse cx="46" cy="140" rx="6" ry="4" fill="#8B4513"/>
+  </g>
+  
+  <!-- Child 3 - African boy -->
+  <g id="african-boy" transform="translate(300, 50)">
+    <!-- Head -->
+    <circle cx="40" cy="40" r="25" fill="#654321"/>
+    <!-- Hair -->
+    <path d="M20 30 Q40 15 60 30 Q55 20 40 20 Q25 20 20 30" fill="#2F1B14"/>
+    <!-- Eyes -->
+    <circle cx="33" cy="35" r="3" fill="white"/>
+    <circle cx="47" cy="35" r="3" fill="white"/>
+    <circle cx="33" cy="35" r="1.5" fill="black"/>
+    <circle cx="47" cy="35" r="1.5" fill="black"/>
+    <!-- Nose -->
+    <ellipse cx="40" cy="42" rx="1" ry="2" fill="#4A2C17"/>
+    <!-- Mouth -->
+    <path d="M36 48 Q40 52 44 48" stroke="#4A2C17" stroke-width="2" fill="none"/>
+    <!-- Body -->
+    <rect x="25" y="65" width="30" height="40" fill="#32CD32" rx="5"/>
+    <!-- Arms -->
+    <rect x="10" y="70" width="15" height="25" fill="#654321" rx="7"/>
+    <rect x="55" y="70" width="15" height="25" fill="#654321" rx="7"/>
+    <!-- Legs -->
+    <rect x="30" y="105" width="8" height="30" fill="#654321" rx="4"/>
+    <rect x="42" y="105" width="8" height="30" fill="#654321" rx="4"/>
+    <!-- Feet -->
+    <ellipse cx="34" cy="140" rx="6" ry="4" fill="#4A2C17"/>
+    <ellipse cx="46" cy="140" rx="6" ry="4" fill="#4A2C17"/>
+  </g>
+  
+  <!-- Decorative elements -->
+  <g id="decorative-elements">
+    <!-- Sun -->
+    <circle cx="350" cy="30" r="15" fill="#FFD700"/>
+    <path d="M350 10 L350 5 M365 30 L370 30 M350 50 L350 55 M335 30 L330 30" stroke="#FFD700" stroke-width="2"/>
+    <path d="M360 20 L363 17 M360 40 L363 43 M340 20 L337 17 M340 40 L337 43" stroke="#FFD700" stroke-width="2"/>
+    
+    <!-- Grass -->
+    <path d="M0 280 Q50 270 100 280 Q150 270 200 280 Q250 270 300 280 Q350 270 400 280 L400 300 L0 300 Z" fill="#228B22"/>
+    
+    <!-- Flowers -->
+    <circle cx="80" cy="275" r="3" fill="#FF69B4"/>
+    <circle cx="150" cy="278" r="3" fill="#FF1493"/>
+    <circle cx="250" cy="276" r="3" fill="#FF69B4"/>
+    <circle cx="320" cy="279" r="3" fill="#FF1493"/>
+  </g>
+</svg>
