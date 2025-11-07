@@ -36,8 +36,9 @@ const usePlayerProgress = () => {
           lessons_completed: Math.floor(totalXP / 50),
           hard_mode_wins: Math.floor(totalXP / 70)
         };
-        // Utiliser localhost pour correspondre aux cookies de session Sanctum
-        await axios.post('http://localhost:8000/api/progress', payload, { withCredentials: true });
+        // Utiliser la base API configurable (dev/prod)
+        const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000/api';
+        await axios.post(`${API_BASE_URL}/progress`, payload, { withCredentials: true });
       } catch (e) {
         // Non connecté ou API indisponible : ignorer silencieusement
       }

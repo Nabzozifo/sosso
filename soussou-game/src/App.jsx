@@ -95,8 +95,9 @@ function App() {
     if (!targetNumber || targetNumber < 1 || targetNumber > 999999) return
 
     setLoading(true)
-    try {
-      const response = await axios.get(`http://localhost:8000/api/explore/${targetNumber}`)
+  try {
+      const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000/api';
+      const response = await axios.get(`${API_BASE_URL}/explore/${targetNumber}`)
       setExplorationResult(response.data)
     } catch (error) {
       console.error('Erreur lors de l\'exploration:', error)

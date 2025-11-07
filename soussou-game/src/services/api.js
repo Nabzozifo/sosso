@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 // Configuration de base de l'API Laravel
-// Important: utiliser le même hôte que celui des cookies Sanctum (localhost) pour éviter les 401.
-const API_BASE_URL = 'http://localhost:8000/api';
+// Utiliser des variables d'environnement Vite pour différencier dev/prod
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000/api';
 
 // Instance axios configurée
 const api = axios.create({

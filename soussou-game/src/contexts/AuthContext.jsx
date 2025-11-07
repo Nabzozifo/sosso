@@ -3,7 +3,8 @@ import axios from 'axios';
 
 // Instance dédiée à l'authentification (cookies Sanctum)
 const authApi = axios.create({
-  baseURL: 'http://localhost:8000',
+  // Base URL pour les routes d'authentification (login/register/logout) et CSRF cookie
+  baseURL: import.meta.env.VITE_AUTH_BASE_URL || 'http://localhost:8000',
   withCredentials: true,
   headers: {
     'Accept': 'application/json',

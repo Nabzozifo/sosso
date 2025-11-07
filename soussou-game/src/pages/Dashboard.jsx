@@ -36,7 +36,8 @@ const Dashboard = () => {
     const loadServerProgress = async () => {
       setServerLoading(true);
       try {
-        const res = await axios.get('http://localhost:8000/api/progress', {
+        const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000/api';
+        const res = await axios.get(`${API_BASE_URL}/progress`, {
           withCredentials: true,
           headers: { 'Accept': 'application/json', 'X-Requested-With': 'XMLHttpRequest' },
         });
