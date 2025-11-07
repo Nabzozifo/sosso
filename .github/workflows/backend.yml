@@ -1,0 +1,70 @@
+name: Backend CI
+
+on:
+  push:
+    paths:
+      - 'soussou-api/**'
+      - '.github/workflows/backend.yml'
+  pull_request:
+    paths:
+      - 'soussou-api/**'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: soussou-api
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          extensions: mbstring, intl, pdo_sqlite
+          coverage: none
+
+      - name: Install Composer dependencies
+        run: composer install --no-interaction --prefer-dist --no-progress
+
+      - name: Prepare environment (.env + sqlite)
+        run: |
+          cp .env.example .env
+          php -r "file_put_contents('database/database.sqlite','');"
+          php artisan key:generate
+          php artisan config:clear
+        env:
+          APP_ENV: testing
+          APP_DEBUG: false
+          APP_URL: http://localhost
+          DB_CONNECTION: sqlite
+          DB_DATABASE: database/database.sqlite
+          SESSION_DRIVER: file
+          CACHE_DRIVER: file
+          QUEUE_CONNECTION: sync
+
+      - name: Run migrations
+        run: php artisan migrate --force
+        env:
+          APP_ENV: testing
+          APP_DEBUG: false
+          APP_URL: http://localhost
+          DB_CONNECTION: sqlite
+          DB_DATABASE: database/database.sqlite
+          SESSION_DRIVER: file
+          CACHE_DRIVER: file
+          QUEUE_CONNECTION: sync
+
+      - name: Run tests
+        run: vendor/bin/phpunit --testdox
+        env:
+          APP_ENV: testing
+          APP_DEBUG: false
+          APP_URL: http://localhost
+          DB_CONNECTION: sqlite
+          DB_DATABASE: database/database.sqlite
+          SESSION_DRIVER: file
+          CACHE_DRIVER: file
+          QUEUE_CONNECTION: sync
